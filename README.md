@@ -1,25 +1,26 @@
 # face-recognition-service
 Face recognition online service, allow user training it.
 
+## IDE for Python Development Pycharm
+
+Download Pycharm development tool https://www.jetbrains.com/pycharm/download/
+
 
 ## Installation 
 ```
 sudo pip install virtualenv
 ```
 
-```
-brew install cmake
-```
+## Create new python project
 
 ```
-git clone https://github.com/davisking/dlib.git
+mkdir project
 ```
 ```
-cd dlib
-mkdir build; cd build; cmake .. -DDLIB_USE_CUDA=0 -DUSE_AVX_INSTRUCTIONS=1; cmake --build .
+cd project
 ```
 ```
-pkg-config --libs --cflags dlib-1
+virtualenv venv
 ```
 
 ## Boost Python
@@ -38,6 +39,20 @@ sudo ./b2 install
 Dlib is a modern C++ toolkit containing machine learning algorithms and tools for creating complex software in C++ to solve real world problems.
 https://github.com/davisking/dlib
 
+```
+brew install cmake
+```
+
+```
+git clone https://github.com/davisking/dlib.git
+```
+```
+cd dlib
+mkdir build; cd build; cmake .. -DDLIB_USE_CUDA=0 -DUSE_AVX_INSTRUCTIONS=1; cmake --build .
+```
+```
+pkg-config --libs --cflags dlib-1
+```
 
 Active python virtual enviroment and run
 ```
