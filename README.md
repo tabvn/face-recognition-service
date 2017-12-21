@@ -64,6 +64,8 @@ Use flask as Python framework build api service. Api http://flask.pocoo.org/docs
 
 ## Database
 we can use any database to store users info. in this project i just use sqlite3 support by Python default.
+Tool for design slqlite http://sqlitebrowser.org/
+
 ## Face recognition Python Library
 
 
