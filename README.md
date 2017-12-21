@@ -64,6 +64,19 @@ Active python virtual enviroment and run
 
 Use flask as Python framework build api service. Api http://flask.pocoo.org/docs/0.12/api
 
+```python
+from flask import Flask
+app = Flask(__name__)
+
+@app route('/', methods=['GET'])
+def home():
+  return Response(json.dumps({"api": "1.0"}), status=200, mimetype='application/json')
+ 
+if __name__ == "__main__":
+
+  app.run()
+```
+
 ## Database
 we can use any database to store users info. in this project i just use sqlite3 support by Python default.
 Tool for design slqlite http://sqlitebrowser.org/
