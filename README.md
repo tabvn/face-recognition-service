@@ -54,6 +54,8 @@ mkdir build; cd build; cmake .. -DDLIB_USE_CUDA=0 -DUSE_AVX_INSTRUCTIONS=1; cmak
 pkg-config --libs --cflags dlib-1
 ```
 
+if above command error you may need instlal pkg-config use ``` brew install pkg-config ```
+
 Active python virtual enviroment and run
 ```
  python setup.py install --yes USE_AVX_INSTRUCTIONS --no DLIB_USE_CUDA
