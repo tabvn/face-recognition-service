@@ -1,7 +1,11 @@
 # face-recognition-service
 Face recognition online service, allow user training it.
 
+
 ## Installation 
+```
+sudo pip install virtualenv
+```
 
 ```
 brew install cmake
