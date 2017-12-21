@@ -14,6 +14,9 @@ git clone https://github.com/davisking/dlib.git
 cd dlib
 mkdir build; cd build; cmake .. -DDLIB_USE_CUDA=0 -DUSE_AVX_INSTRUCTIONS=1; cmake --build .
 ```
+```
+pkg-config --libs --cflags dlib-1
+```
 
 ## dlib C++ library 
 Dlib is a modern C++ toolkit containing machine learning algorithms and tools for creating complex software in C++ to solve real world problems.
