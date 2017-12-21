@@ -29,6 +29,9 @@ To compile Boost.Python yourself download boost from boost.org and then go into 
 sudo ./b2 install
 ```
 
+```
+ python setup.py install --yes USE_AVX_INSTRUCTIONS --no DLIB_USE_CUDA
+```
 ## Flask 
 
 Use flask as Python framework build api service. Api http://flask.pocoo.org/docs/0.12/api
