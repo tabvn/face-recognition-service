@@ -6,9 +6,7 @@ Face recognition online service, allow user training it.
 ```
 brew install cmake
 ```
-```
-brew install boost-python --with-python3 --without-python
-```
+
 ```
 git clone https://github.com/davisking/dlib.git
 ```
