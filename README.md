@@ -65,7 +65,7 @@ Active python virtual enviroment and run
 Use flask as Python framework build api service. Api http://flask.pocoo.org/docs/0.12/api
 
 ```python
-from flask import Flask
+from flask import Flask,Response,json
 app = Flask(__name__)
 
 @app route('/', methods=['GET'])
