@@ -20,6 +20,7 @@ mkdir build; cd build; cmake .. -DDLIB_USE_CUDA=0 -DUSE_AVX_INSTRUCTIONS=1; cmak
 ## dlib C++ library 
 Dlib is a modern C++ toolkit containing machine learning algorithms and tools for creating complex software in C++ to solve real world problems.
 https://github.com/davisking/dlib
+
 To compile Boost.Python yourself download boost from boost.org and then go into the boost root folder
 
 ```
