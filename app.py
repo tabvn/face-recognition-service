@@ -29,7 +29,7 @@ def get_user_by_id(user_id):
 
     index = 0
     for row in results:
-        print(row)
+        # print(row)
         face = {
             "id": row[3],
             "user_id": row[4],
@@ -43,7 +43,7 @@ def get_user_by_id(user_id):
                 "created": row[2],
                 "faces": [],
             }
-        if 3 in row:
+        if row[3]:
             user["faces"].append(face)
         index = index + 1
 
@@ -161,13 +161,13 @@ def recognize():
             user_id = app.face.recognize(filename)
             if user_id:
                 user = get_user_by_id(user_id)
-                message = {"message": "Hey we found {0} matched with your face image".format(user["name"]), "user": user}
+                message = {"message": "Hey we found {0} matched with your face image".format(user["name"]),
+                           "user": user}
                 return success_handle(json.dumps(message))
             else:
 
                 return error_handle("Sorry we can not found any people matched with your face image, try another image")
 
-    return success_handle(json.dumps({"filename_to_compare_is": filename}))
 
-
+# Run the app
 app.run()
