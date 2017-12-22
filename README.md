@@ -1,5 +1,5 @@
 # face-recognition-service
-Face recognition online service, allow user training it.
+<a href="https://www.youtube.com/playlist?list=PLFaW_8zE4amMZxCOYt7954AaP397_tMFc">Face recognition online service</a>, allow user training it.
 
 ## IDE for Python Development Pycharm
 
