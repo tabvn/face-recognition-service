@@ -81,7 +81,8 @@ if __name__ == "__main__":
 we can use any database to store users info. in this project i just use sqlite3 support by Python default.
 Tool for design slqlite http://sqlitebrowser.org/
 
-## Face recognition Python Library
+## Videos
+Full playlist: https://www.youtube.com/playlist?list=PLFaW_8zE4amMZxCOYt7954AaP397_tMFc
 
 
 
