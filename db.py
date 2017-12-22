@@ -27,3 +27,14 @@ class Database:
         result = cursor.lastrowid
         cursor.close()
         return result
+
+    def select(self, q, arg=()):
+        cursor = self.connection.cursor()
+
+        return cursor.execute(q, arg)
+
+    def delete(self, q, arg=()):
+        cursor = self.connection.cursor()
+        result = cursor.execute(q, arg)
+        self.connection.commit()
+        return result
