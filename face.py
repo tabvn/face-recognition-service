@@ -33,7 +33,7 @@ class Face:
         results = self.db.select('SELECT faces.id, faces.user_id, faces.filename, faces.created FROM faces')
 
         for row in results:
-            
+
             user_id = row[1]
             filename = row[2]
 
